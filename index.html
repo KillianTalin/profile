@@ -7,51 +7,73 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans:300,400,600i" rel="stylesheet">
   </head>
   <body>
-    <div class = "card-white">
-      <img src="images/profile.png" alt="Profile picture" class = "img-circle">
-      <h1>Killian Talin</h1>
-      <h2>Programmer</h2>
-      <p>Bored of bullshit classes at EDHEC Business School, I am now learning coding skills with Le Wagon</p>
-    </div>
-
-    <div class = "card-white">
-      <ul class="list-inline">
-        <li><i class="fa fa-facebook" aria-hidden="true"></i><a href="https://www.facebook.com/killian.talin" target="_blank">Facebook</a></li>
-        <li><i class="fa fa-twitter" aria-hidden="true"></i><a href="https://twitter.com/KillianTalin" target="_blank">Twitter</a></li>
+    <div id="sidebar">
+      <ul class="sidebar-points">
+        <li>
+          <a href="#summary">
+            <i class="fa fa-side fa-info-circle" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#favorite-movies">
+            <i class="fa fa-side fa-video-camera" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#favorite-sports">
+            <i class="fa fa-side fa-bicycle" aria-hidden="true"></i>
+          </a>
+        </li>
       </ul>
     </div>
+    <div id="page-content">
+      <div class = "card-white" id="summary">
+        <img src="images/select.png" alt="Profile picture" class = "img-circle">
+        <h1>Killian Talin</h1>
+        <h2>Programmer</h2>
+        <p>Bored of bullshit classes at EDHEC Business School, I am now learning coding skills with Le Wagon</p>
+      </div>
 
-    <div class = "card-white">
-      <h2>Top movies</h2>
-      <table>
-        <tbody>
-          <tr>
-            <td>
-              <img src="images/grand-budapest.jpeg" alt="Grand Budapest" class = "img-rectangle shadowed">
-            </td>
-            <td>
-              Le film retrace les aventures de Gustave H, l’homme aux clés d’or d’un célèbre hôtel européen de l’entre-deux-guerres et du garçon d’étage Zéro Moustafa, son allié le plus fidèle.
-              La recherche d’un tableau volé, oeuvre inestimable datant de la Renaissance et un conflit autour d’un important héritage familial forment la trame de cette histoire au coeur de la vieille Europe en pleine mutation.
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+      <div class = "card-white" id="social-networks">
+        <ul class="list-inline">
+          <li><i class="fa fa-facebook" aria-hidden="true"></i><a href="https://www.facebook.com/killian.talin" target="_blank">Facebook</a></li>
+          <li><i class="fa fa-twitter" aria-hidden="true"></i><a href="https://twitter.com/KillianTalin" target="_blank">Twitter</a></li>
+        </ul>
+      </div>
 
-    <div class = "card-white favorites">
-      <h2>Top sport</h2>
-      <table>
-        <tbody>
-          <tr>
-            <td>
-              <img src="images/badminton-killian.png" alt="Badminton" class ="img-rectangle shadowed">
-            </td>
-            <td>
-              Contrairement à ce que l'on pense, le badminton est loin d'être un sport de plage: technique, tactique et physique sont au coeur de la stratégie.
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <div class = "card-white" id="favorite-movies">
+        <h2>Films</h2>
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <img src="images/grand-budapest.jpeg" alt="Grand Budapest" class = "img-rectangle shadowed">
+              </td>
+              <td class ="text-grey">
+                Le film retrace les aventures de Gustave H, l’homme aux clés d’or d’un célèbre hôtel européen de l’entre-deux-guerres et du garçon d’étage Zéro Moustafa, son allié le plus fidèle.
+                La recherche d’un tableau volé, oeuvre inestimable datant de la Renaissance et un conflit autour d’un important héritage familial forment la trame de cette histoire au coeur de la vieille Europe en pleine mutation.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class = "card-white" id="favorite-sports">
+        <h2>Sports</h2>
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <img src="images/badminton-killian.png" alt="Badminton" class ="img-rectangle shadowed">
+              </td>
+              <td class ="text-grey">
+                Le badminton est le sport de raquette le plus rapide du monde !
+                Il n'est pas rare de voir une douzaine d'échanges en double en moins de 10 secondes. Avec un record du monde de smash à près de 493 km/h, le badminton est loin d'être un sport de plage: technique, tactique et physique sont au coeur de la stratégie.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </body>
 </html>
